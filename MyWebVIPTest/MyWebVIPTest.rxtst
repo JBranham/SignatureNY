@@ -11,17 +11,23 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="24c97d84-0d74-49ac-bd9d-35838ac4c0d4"
-			name="WEB_VIPs_Add_TestCase">
+			name="TestCase1">
 			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
 			TracingScreenshotQuality="40"
+			VideoBitrate="2000"
+			VideoFps="15"
+			VideoRecordingMode="Off"
+			VideoSource="Auto"
 			enabletracingscreenshots="True"
 			id="38a16eeb-514b-4236-9bd0-a016195325f1"
+			junitreport="False"
 			name="MyWebVIPTest"
-			placescreenshotsinfolder="True"
 			reportcompress="False"
+			reportdirectoryname=""
+			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
 			reportwriteinterval="30000ms">
@@ -59,7 +65,7 @@ rxversion="8.3">
 				name="MyWebVIPTest">
 					<testcase
 					id="24c97d84-0d74-49ac-bd9d-35838ac4c0d4"
-					name="WEB_VIPs_Add_TestCase">
+					name="TestCase1">
 						<testmodule
 						id="487946a4-b583-420b-864c-347b5d18c384"
 						name="StartApp">
