@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="376f6b69-5cc9-4dbf-afb1-5e03d117884c"
+mode="Desktop"
+rxversion="8.3">
+	<name>
+		StartApp
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartApp"
+	namespace="MyWebVIPTest">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="IE"
+		clearcache="False"
+		enabled="True"
+		incognito="False"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<url>
+				http://www.ranorex.com/web-testing-examples/vip/
+			</url>
+		</openwebsiterecorditem>
+	</recorditems>
+	<repository
+	id="da3b2bc7-526d-47dd-b196-99cdf4d25f37"
+	name="MyWebVIPTestRepository"
+	relativepath="MyWebVIPTestRepository.rxrep"
+	rxversion="6.2">
+		<codegen
+		classname="MyWebVIPTestRepository"
+		namespace="MyWebVIPTest">
+		</codegen>
+		<rootfolder
+		id="01c5e881-187a-4fa0-90ca-eb7438950196"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartApp.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

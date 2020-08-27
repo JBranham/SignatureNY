@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+id="da3b2bc7-526d-47dd-b196-99cdf4d25f37"
+name="MyWebVIPTestRepository"
+rxversion="8.3">
+	<codegen
+	classname="MyWebVIPTestRepository"
+	namespace="MyWebVIPTest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="01c5e881-187a-4fa0-90ca-eb7438950196"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="71ed5ed4-cabc-4650-8ac0-10e5d81f814c"
+		isrooted="True"
+		name="RanorexVIPDatabaseTestWebApplicatio"
+		refpath="/dom[@domain='www.ranorex.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			capname="selecttag"
+			id="7287bfdb-bc40-48c4-82e5-42f03090dbe4"
+			isrooted="True"
+			name="Category_RootedFolder"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,optiontag"
+				capname="optiontag"
+				id="45a17821-c855-41a2-ac94-d053f5a73624"
+				name="Other"
+				refimgid="42a5999e-c267-47c2-b5cd-8a60a04f0e3d"
+				refpath="/dom[@domain='www.ranorex.com']//select[#'Category']/option[@value='Other']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.ranorex.com']//select[#'Category']/option[@value='Other']
+				</item>
+				<basepath>
+					/dom[@domain='www.ranorex.com']//select[#'Category']
+				</basepath>
+			</folder>
+			<folder
+			capname="table"
+			id="cd529c39-7341-4946-b20e-ac9db4de689a"
+			isrooted="True"
+			name="RadioButtons_RootedFolder"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="da9c1a4a-f858-4475-9479-b2158ed7d558"
+				name="Male"
+				refimgid="c683d417-50eb-434f-a4a3-0db785e24498"
+				refpath="/dom[@domain='www.ranorex.com']//td[#'gender']/table/tbody/tr[3]/td/input[@id='Gender']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.ranorex.com']//td[#'gender']/table//input[@name='Gender' and @type='radio' and @value='male']
+				</item>
+				<basepath>
+					/dom[@domain='www.ranorex.com']//td[#'gender']/table
+				</basepath>
+			</folder>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="161832a9-d4f0-4a46-b6c2-d4a9275c9054"
+			name="InputTagAdd"
+			refimgid="2291e896-ee95-4644-aac1-6183b096e004"
+			refpath="/dom[@domain='www.ranorex.com']//input[#'Add']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//input[#'Add']
+			</item>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="fdd88167-94cf-4273-9873-0bb034b7af78"
+			name="Count"
+			refimgid="a1ea94ff-1939-405c-8a67-70df7b0b65f0"
+			refpath="/dom[@domain='www.ranorex.com']//td[#'count']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//td[#'count']
+			</item>
+			<folder
+			capname="unknown"
+			id="732e234d-eb57-4049-84d3-53cd124fb000"
+			isrooted="False"
+			name="InputFields_SimpleFolder"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="71d23c1b-8660-4c51-bd37-89bb88c03a58"
+				name="FirstName"
+				refimgid="30f0640e-b534-4606-b059-9fe7ef31abd9"
+				refpath="/dom[@domain='www.ranorex.com']//input[#'FirstName']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.ranorex.com']//input[#'FirstName']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="1cf7a2e1-81ed-4b41-bb67-63a69034a672"
+				name="LastName"
+				refimgid="a15b18a8-95dd-470c-8312-ee11fa295db9"
+				refpath="/dom[@domain='www.ranorex.com']//input[#'LastName']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.ranorex.com']//input[#'LastName']
+				</item>
+			</folder>
+			<basepath>
+				/dom[@domain='www.ranorex.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>
