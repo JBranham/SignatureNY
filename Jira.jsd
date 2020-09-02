@@ -1,0 +1,35 @@
+{
+  "ServerUrl": "https://ranorex12.atlassian.net/",
+  "ProjectKey": "RAN",
+  "Templates": [
+    {
+      "Name": "template1",
+      "Body": {
+        "fields": {
+          "summary": "Ranorex test case $(TestCaseName)",
+          "description": "$(TestCaseTag) TEST RUN",
+          "project": {
+            "key": "RAN"
+          },
+          "issuetype": {
+            "name": "Bug"
+          }
+        }
+      }
+    }
+  ],
+  "CreateLinkSettings": {
+    "Enabled": false,
+    "IssueType": "Task",
+    "UrlSettings": {
+      "summary": "Ranorex test case $(TestCaseName)"
+    }
+  },
+  "UpdateIssueSettings": {
+    "Enabled": true,
+    "ClosedState": "Done",
+    "OpenState": "Selected for Development",
+    "ShouldUploadVideo": true,
+    "CreationTemplate": "template1"
+  }
+}

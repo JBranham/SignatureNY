@@ -3,23 +3,13 @@
 rxversion="8.3">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
-			<testmodule
-			id="24ad07dd-9e00-49ae-91ab-e97416c4c3c5"
-			name="AddVIPs"
-			ref="6621484a-98b3-469f-8c10-c29df26737b7"
-			type="Recording">
-			</testmodule>
-			<testcase
-			id="24c97d84-0d74-49ac-bd9d-35838ac4c0d4"
-			name="TestCase1">
-			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
 			TracingScreenshotQuality="40"
 			VideoBitrate="2000"
 			VideoFps="15"
-			VideoRecordingMode="Off"
+			VideoRecordingMode="KeepFailedTests"
 			VideoSource="Auto"
 			enabletracingscreenshots="True"
 			id="38a16eeb-514b-4236-9bd0-a016195325f1"
@@ -33,28 +23,56 @@ rxversion="8.3">
 			reportwriteinterval="30000ms">
 			</testsuite>
 			<testmodule
-			id="487946a4-b583-420b-864c-347b5d18c384"
-			name="StartApp"
-			ref="376f6b69-5cc9-4dbf-afb1-5e03d117884c"
-			type="Recording">
-				<description>
-					<![CDATA[Has syntax for inheritance in StartApp.cs]]>
-				</description>
-			</testmodule>
-			<testmodule
-			id="7acd202a-b9f0-4a4c-ac63-14f4d88f88cc"
+			id="524cd3ab-85b4-4a12-b68f-c890b04d22b8"
 			name="CloseApp"
 			ref="385d616f-a60a-4829-8fb1-afaffdb21488"
 			type="Recording">
-				<description>
-					<![CDATA[No inheritance -- But able to use coded methods via User Code Collection]]>
-				</description>
 			</testmodule>
+			<testmodule
+			id="6ae7b876-e3b8-4cd5-9369-227305f82f7f"
+			name="StartApp"
+			ref="376f6b69-5cc9-4dbf-afb1-5e03d117884c"
+			type="Recording">
+			</testmodule>
+			<teardown
+			id="8807a85a-2901-4d74-a305-8274e0c86e58"
+			name="teardown">
+			</teardown>
+			<testcase
+			id="a25c65ac-d301-4f5b-89dc-a2e06f0be8ca"
+			name="FailingTestCase">
+			</testcase>
 			<testcase
 			id="b61142aa-7664-492d-a08b-f6f033e66b7f"
 			name="MyWebVIPTest"
 			reportlevel="Info;20">
 			</testcase>
+			<testcase
+			id="b8a57a5f-0aa3-4844-9f54-0e4c49932cdf"
+			name="AddOneUserTC">
+			</testcase>
+			<setup
+			id="c5758156-feaf-4d6e-91eb-4a8b88a07d69"
+			name="setup">
+			</setup>
+			<testmodule
+			id="d00b945d-8263-4155-a414-1df427af8424"
+			name="Recording1"
+			ref="f42e32ad-a3ae-431d-b388-abd10f8089ab"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d51b75c0-5ea2-441f-9c21-f506e8b3508a"
+			name="SetupJiraIntegration"
+			ref="c87d3889-8e1f-4009-b203-8bd062ef46c9"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="ebc4217d-56a9-47ef-a62b-49740b98a498"
+			name="AddVIPs"
+			ref="6621484a-98b3-469f-8c10-c29df26737b7"
+			type="Recording">
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -63,20 +81,40 @@ rxversion="8.3">
 				<testcase
 				id="b61142aa-7664-492d-a08b-f6f033e66b7f"
 				name="MyWebVIPTest">
-					<testcase
-					id="24c97d84-0d74-49ac-bd9d-35838ac4c0d4"
-					name="TestCase1">
+					<setup
+					id="c5758156-feaf-4d6e-91eb-4a8b88a07d69"
+					name="setup">
 						<testmodule
-						id="487946a4-b583-420b-864c-347b5d18c384"
+						id="d51b75c0-5ea2-441f-9c21-f506e8b3508a"
+						name="SetupJiraIntegration">
+						</testmodule>
+					</setup>
+					<testcase
+					id="b8a57a5f-0aa3-4844-9f54-0e4c49932cdf"
+					name="AddOneUserTC">
+						<testmodule
+						id="6ae7b876-e3b8-4cd5-9369-227305f82f7f"
 						name="StartApp">
 						</testmodule>
 						<testmodule
-						id="24ad07dd-9e00-49ae-91ab-e97416c4c3c5"
+						id="ebc4217d-56a9-47ef-a62b-49740b98a498"
 						name="AddVIPs">
 						</testmodule>
+						<teardown
+						id="8807a85a-2901-4d74-a305-8274e0c86e58"
+						name="teardown">
+							<testmodule
+							id="524cd3ab-85b4-4a12-b68f-c890b04d22b8"
+							name="CloseApp">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="a25c65ac-d301-4f5b-89dc-a2e06f0be8ca"
+					name="FailingTestCase">
 						<testmodule
-						id="7acd202a-b9f0-4a4c-ac63-14f4d88f88cc"
-						name="CloseApp">
+						id="d00b945d-8263-4155-a414-1df427af8424"
+						name="Recording1">
 						</testmodule>
 					</testcase>
 				</testcase>
@@ -84,19 +122,78 @@ rxversion="8.3">
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		id="571e70e9-b446-4a1a-8a63-a323f81cda82"
+		lastknownrowcount="3"
+		name="wdawdawd"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					wdawd
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						wdawd
+					</th>
+				</tr>
+				<tr>
+					<td>
+						wdwad
+					</td>
+				</tr>
+				<tr>
+					<td>
+						wdwad
+					</td>
+				</tr>
+				<tr>
+					<td>
+						wdwa
+					</td>
+				</tr>
+			</table>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun">
-			<testcontainer
-			id="24c97d84-0d74-49ac-bd9d-35838ac4c0d4">
-			</testcontainer>
+		name="FeatureA">
 			<testcontainer
 			id="b61142aa-7664-492d-a08b-f6f033e66b7f">
 			</testcontainer>
 		</testconfiguration>
+		<testconfiguration
+		name="FeatureB">
+			<testcontainer
+			id="b61142aa-7664-492d-a08b-f6f033e66b7f">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
+		name="SmokeTests">
+			<testcontainer
+			id="b61142aa-7664-492d-a08b-f6f033e66b7f">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
+		name="TestRun">
+			<testcontainer
+			id="a25c65ac-d301-4f5b-89dc-a2e06f0be8ca">
+			</testcontainer>
+			<testcontainer
+			id="b61142aa-7664-492d-a08b-f6f033e66b7f">
+			</testcontainer>
+			<testcontainer
+			id="b8a57a5f-0aa3-4844-9f54-0e4c49932cdf">
+			</testcontainer>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			C:\Program Files (x86)\Ranorex\Studio\Bin\Ranorex.Integrations.Jira.dll
+		</reference>
 	</references>
 </testsuitedoc>

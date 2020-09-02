@@ -24,29 +24,29 @@ namespace MyWebVIPTest
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The AddVIPs recording.
+    ///The Recording1 recording.
     /// </summary>
-    [TestModule("6621484a-98b3-469f-8c10-c29df26737b7", ModuleType.Recording, 1)]
-    public partial class AddVIPs : ITestModule
+    [TestModule("f42e32ad-a3ae-431d-b388-abd10f8089ab", ModuleType.Recording, 1)]
+    public partial class Recording1 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the MyWebVIPTestRepository repository.
         /// </summary>
         public static MyWebVIPTestRepository repo = MyWebVIPTestRepository.Instance;
 
-        static AddVIPs instance = new AddVIPs();
+        static Recording1 instance = new Recording1();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public AddVIPs()
+        public Recording1()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static AddVIPs Instance
+        public static Recording1 Instance
         {
             get { return instance; }
         }
@@ -79,27 +79,7 @@ namespace MyWebVIPTest
 
             Init();
 
-            MyCustomClickAndType(repo.RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.FirstName, "Jay");
-            Delay.Milliseconds(0);
-            
-            MyCustomClickAndType(repo.RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.LastName, "Branham");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexVIPDatabaseTestWebApplicatio.Category_RootedFolder.Other' at 19;6.", repo.RanorexVIPDatabaseTestWebApplicatio.Category_RootedFolder.OtherInfo, new RecordItemIndex(2));
-            repo.RanorexVIPDatabaseTestWebApplicatio.Category_RootedFolder.Other.Click("19;6");
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexVIPDatabaseTestWebApplicatio.RadioButtons_RootedFolder.Male' at 5;7.", repo.RanorexVIPDatabaseTestWebApplicatio.RadioButtons_RootedFolder.MaleInfo, new RecordItemIndex(3));
-            repo.RanorexVIPDatabaseTestWebApplicatio.RadioButtons_RootedFolder.Male.Click("5;7");
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexVIPDatabaseTestWebApplicatio.InputTagAdd' at 25;12.", repo.RanorexVIPDatabaseTestWebApplicatio.InputTagAddInfo, new RecordItemIndex(4));
-            repo.RanorexVIPDatabaseTestWebApplicatio.InputTagAdd.Click("25;12");
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='VIP count: 999') on item 'RanorexVIPDatabaseTestWebApplicatio.Count'.", repo.RanorexVIPDatabaseTestWebApplicatio.CountInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.RanorexVIPDatabaseTestWebApplicatio.CountInfo, "InnerText", "VIP count: 999");
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Success, "User", "FAIL", new RecordItemIndex(0));
             
         }
 

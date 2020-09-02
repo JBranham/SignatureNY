@@ -43,6 +43,9 @@
     <Reference Include="Ranorex.Core.Resolver">
       <Private>True</Private>
     </Reference>
+    <Reference Include="Ranorex.Integrations.Jira">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Ranorex.Plugin.Cef">
       <Private>False</Private>
     </Reference>
@@ -158,6 +161,18 @@
       <UserCode>true</UserCode>
       <id>876d1e5d-d131-4285-8ea5-5008add3256f</id>
     </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>0373d07d-9d47-49f6-8947-178b5a908fab</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b6c7300d-bbcc-41c3-b466-892d64de7ffd</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>0373d07d-9d47-49f6-8947-178b5a908fab</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7a7d2b2f-43d8-4266-9e5f-f8f19325e832</id>
+    </Compile>
     <Compile Include="StartApp.cs">
       <BoundTo>2c862242-9a47-4863-9b5b-137f2fc0bd15</BoundTo>
       <DependentUpon>StartApp.rxrec</DependentUpon>
@@ -195,6 +210,11 @@
       <BoundTo>4f09755c-526f-461f-8eb5-f72aaf885fbb</BoundTo>
       <id>dba7b58e-d06d-4258-b707-f2399f550765</id>
       <recordtableid>6621484a-98b3-469f-8c10-c29df26737b7</recordtableid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>4f09755c-526f-461f-8eb5-f72aaf885fbb</BoundTo>
+      <id>0373d07d-9d47-49f6-8947-178b5a908fab</id>
+      <recordtableid>f42e32ad-a3ae-431d-b388-abd10f8089ab</recordtableid>
     </None>
     <None Include="StartApp.rxrec">
       <BoundTo>4f09755c-526f-461f-8eb5-f72aaf885fbb</BoundTo>

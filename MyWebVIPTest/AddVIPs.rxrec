@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="6621484a-98b3-469f-8c10-c29df26737b7"
 mode="Desktop"
 rxversion="8.3">
-	<name>
-		AddVIPs
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="False"
 		methodname="MyCustomClickAndType"
 		namespace="MyWebVIPTest"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -77,8 +73,7 @@ rxversion="8.3">
 		isexternaltestmethod="False"
 		methodname="MyCustomClickAndType"
 		namespace="MyWebVIPTest"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -123,7 +118,8 @@ rxversion="8.3">
 		optional="False"
 		searchpropertyid="b909336d-35d5-47b1-84b5-11265920f23a"
 		sx="719"
-		sy="470">
+		sy="470"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -516,7 +512,8 @@ oopDHgAAADAFRW3/AB6xf7g/lRRQB//Z
 		optional="False"
 		searchpropertyid="4808e3cb-59f6-4836-bda5-6170fddab31b"
 		sx="899"
-		sy="465">
+		sy="465"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -995,7 +992,8 @@ H8IoA//Z
 		optional="False"
 		searchpropertyid="73d5c61e-f68c-4b56-a404-db8a46c54a82"
 		sx="915"
-		sy="494">
+		sy="494"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1969,7 +1967,7 @@ AbB70UUUAf/Z
 				InnerText
 			</matchname>
 			<matchvalue>
-				VIP count: 1
+				VIP count: 999
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -1977,7 +1975,7 @@ AbB70UUUAf/Z
 	id="da3b2bc7-526d-47dd-b196-99cdf4d25f37"
 	name="MyWebVIPTestRepository"
 	relativepath="MyWebVIPTestRepository.rxrep"
-	rxversion="6.2">
+	rxversion="8.3">
 		<codegen
 		classname="MyWebVIPTestRepository"
 		namespace="MyWebVIPTest">

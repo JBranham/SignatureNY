@@ -7,6 +7,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{65183373-2845-429E-BB32-D3852BABBC22}"
 	ProjectSection(SolutionItems) = postProject
 		Ranorex = .\Ranorex.rxsettings
+		Jira = .\Jira.jsd
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebVIPTest", "MyWebVIPTest\MyWebVIPTest.csproj", "{CF9AE24A-529E-4F66-8644-A6BE099219C0}"

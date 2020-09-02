@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f42e32ad-a3ae-431d-b388-abd10f8089ab"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="MyWebVIPTest">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="FAIL"
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="ad2c40ba-4049-42dc-a437-5e1fc2b222c7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="da3b2bc7-526d-47dd-b196-99cdf4d25f37"
+	name="MyWebVIPTestRepository"
+	relativepath="MyWebVIPTestRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="MyWebVIPTestRepository"
+		namespace="MyWebVIPTest">
+		</codegen>
+		<rootfolder
+		id="01c5e881-187a-4fa0-90ca-eb7438950196"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
